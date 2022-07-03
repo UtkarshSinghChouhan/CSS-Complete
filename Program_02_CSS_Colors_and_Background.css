@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.red{
+    background-color: rgb(163, 0, 0);
+    color: yellow;
+    height: 85px;
+
+}
+
+.green{
+    background-color: rgb(240, 240, 23);
+    color: red;
+    height: 85px;
+}
+
+.container{
+    margin-left: 427px;
+    background-color: rgb(102, 12, 176);
+    border: 4px solid rgb(48, 0, 206);
+    color: white;
+    width: 500px;
+    height: 1400px;
+    
+    background-image: url('https://media2.giphy.com/media/uk4Va5MkRp2bfkOk6f/200.gif?cid=95b27944c476c1e829a167d0a18f41b413ff94c845ec099e&rid=200.gif');
+
+    background-repeat: no-repeat;
+
+    background-size: 200px 200px;       /*contain value will adjust the background in tht particular element*/
+
+    background-position: center;
+
+    background-attachment: scroll;
+}
+
+body{
+    background-image: url('https://media0.giphy.com/media/lkfowkPYX5i0r1Cbll/200.gif?cid=95b27944af33f635474c9e0ddd0fba5b14169bebeb239357&rid=200.gif&ct=g');
+    /* By default the image is repeated in both X and Y direction */
+
+    background-repeat: no-repeat;
+
+    background-size: contain;
+}
