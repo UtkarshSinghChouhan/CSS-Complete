@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: black;
+            color: rgb(168, 167, 167);
+            height: 66px;
+        }
+
+        header nav ul li{
+            display: inline-block;
+            margin: 25px ;
+        }
+
+
+
+
+
+        p{
+            text-align: center;
+            border: 2px solid purple;
+        }
+
+        .class{
+            background-color: rgb(212, 152, 212);
+
+            height: 50vh;
+            width: 50vw;
+            
+            margin: auto;
+
+            /* position: relative;      Here we are trying to make the parent-container first-non-static ancestor to the box-div, so that we can observe the position:absolute; property on it */
+        }
+
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            margin: auto;
+
+            /* position: relative; */
+            /* position: absolute; */
+            position: fixed;
+            
+
+           
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(81, 53, 106);
+            margin: auto;           
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="class">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima est ipsum culpa quam, voluptatibus unde porro perferendis, incidunt numquam similique voluptate tempora ea voluptatum necessitatibus iusto! Nulla accusantium similique ex hic, provident perferendis repellat!</p>
+
+        <div class="box">
+           ✅Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatem nisi totam sunt voluptate quae. Veniam suscipit odit id, mollitia magnam quibusdam doloremque harum consequatur.
+        </div>
+        <div class="box1">
+           ✅Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatem nisi totam sunt voluptate quae. Veniam suscipit odit id, mollitia magnam quibusdam doloremque harum consequatur.
+        </div>
+    </div>
+</body>
+</html>

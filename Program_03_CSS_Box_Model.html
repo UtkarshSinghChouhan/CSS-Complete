@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .content{
+            background-color: rgb(162, 195, 224);
+
+            height: 500px;
+            width: 500px;
+            
+            margin: 14px;
+            padding: 14px;
+            border: 4px double black;    
+            border-radius: 10px;
+        }
+
+        .box1{
+            margin: 14px;
+            background-color: aqua;
+        }
+
+        .box2{
+            margin: 20px;
+            background-color: aquamarine;
+        }
+
+
+        .parent
+        {
+            background-color: rgb(173, 86, 173);
+
+            width: 200px;
+            height: 300px;
+            border: 5px solid purple;
+            padding: 10px;
+            margin: 23px;
+        }
+
+        .child{
+            background-color: rgb(208, 161, 208);
+
+            border:5px solid rgb(93, 4, 93);
+            width: 50%;
+            height: 100%;
+            /* margin: 5px;    No need to consider the margin here */
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, commodi voluptates accusamus modi assumenda quisquam nisi minima fuga est, totam qui perferendis quia neque unde veniam eum voluptatem illo. Sed earum possimus veritatis facilis!
+    </div>
+
+    &emsp;
+    
+    <!-- To understand the concept of margin-collapse I have sed -->
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aliquam amet molestiae, asperiores quibusdam sunt inventore ea repudiandae reiciendis impedit reprehenderit vero tempore necessitatibus dolorum atque quaerat rerum voluptatem illo earum esse. Iure, numquam.
+    </div>
+
+    <div class="box2">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo illum saepe nobis deleniti? Animi expedita cumque quasi voluptates repellendus distinctio, rerum molestias, facilis error labore odit ab in natus provident. Tempora ipsa nam maiores aliquid fuga. Voluptatibus obcaecati totam neque! Saepe, at commodi?
+    </div>
+
+    &emsp;
+    
+    <!-- To under stand the concept of "box-sizing" property -->
+
+    <div class="parent">
+        <div class="child">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius adipisci, cumque ksdn
+        </div>
+
+        <div class="child">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius adipisci, cumque ksdn
+        </div>
+    </div>
+</body>
+</html>
