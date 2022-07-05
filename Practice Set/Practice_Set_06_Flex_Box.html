@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 06 FLEX BOX</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            padding: 30px;
+        }
+        li{
+           list-style:none ; 
+           display: inline;
+           padding: 34px;
+        }
+
+        header{
+            background-color: black;
+            color: gray;
+        }
+
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left{
+            height: 80vh;
+            width: 40vw;
+            background-color: gray;
+            
+        }
+        
+        .right{
+            height: 80vh;
+            width: 40vw;
+            background-color: rgb(78, 78, 78);
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorum culpa corporis doloribus possimus in amet aspernatur reiciendis! Optio obcaecati consectetur deleniti explicabo repellendus tempora ipsam placeat at impedit! Molestias, a veritatis. Est, quia.</div>
+        <div class="right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis provident natus, consequatur eligendi velit minima molestias magni exercitationem dignissimos ea repudiandae tempora, animi nihil voluptates sunt placeat modi. At harum quasi similique a sit.</div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Box</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            height: 150vh;
+            background-color: rgb(229, 255, 0);
+
+
+            display: flex;
+
+            /* FLEX PROPERTIES FOR PARENT CONTAINER */
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            /* align-content: center; */
+        }
+        .box1{
+            width: 234px;
+            height: 245px;
+            background-color: rgb(162, 188, 210);
+            border: 2px solid black;
+
+            /* FLEX PROPERTIES FOR THE CHILD CONTAINER */
+            order: 4;
+            align-self:flex-end;
+            /* flex-grow: 3; */
+            /* flex-shrink: 3; */
+        }
+        .box2{
+            width: 234px;
+            height: 245px;
+            background-color: rgb(64, 166, 255);
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+        <div class="box2">Box2 A</div>
+        <div class="box2">Box2 B</div>
+    </div>
+</body>
+</html>

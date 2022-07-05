@@ -44,3 +44,24 @@
     <div class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, distinctio voluptas temporibus quod necessitatibus aliquid, ipsa porro accusamus voluptatem placeat maiores rerum rem voluptatibus iusto perferendis unde repellendus sunt facilis voluptates, sequi modi eius sed suscipit ex! Est mollitia nesciunt esse vero velit deserunt veritatis?</div>
 </body>
 </html>
+
+
+<!-- Using two-value display syntax instead, for clarity
+    
+The display CSS property in fact sets two things at once: the outer display type, and the inner display type. The outer display type affects how the element (which acts as a container) is displayed in its context. The inner display type affects how the children of the element (or the children of the container) are laid out.
+
+If you use the two-value display syntax, which is only supported in some browsers like Firefox, the difference between the two is much more obvious:
+
+display: block is equivalent to display: block flow
+display: inline is equivalent to display: inline flow
+display: flex is equivalent to display: block flex
+display: inline-flex is equivalent to display: inline flex
+display: grid is equivalent to display: block grid
+display: inline-grid is equivalent to display: inline grid
+
+
+Outer display type: block or inline:
+An element with the outer display type of block will take up the whole width available to it, like <div> does. An element with the outer display type of inline will only take up the width that it needs, with wrapping, like <span> does.
+
+Inner display type: flow, flex or grid:
+The inner display type flow is the default inner display type when flex or grid is not specified. It is the way of laying out children elements that we are used to in a <p> for instance. flex and grid are new ways of laying out children that each deserve their own post. -->
