@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 08 CSS Tranform, Transitions and Animations</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .progressBar{
+            background-color: red;
+            height: 3px;
+
+            animation-name: barAnimation;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+            animation-direction: reverse;
+        }
+
+        header{
+            background-color: black;
+            height: 84px;
+        }
+
+        main{
+            background-color: rgb(154, 154, 244);
+            height: 899px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .box{
+            width: 300px;
+            height: 300px;
+            
+            display: flex;           
+
+        }
+
+       
+
+        img{
+            animation: imageRotation 2s ease-in-out  infinite alternate-reverse ;
+        }
+        
+        @keyframes imageRotation {
+            from{
+                transform: rotateZ(0deg);
+                width: 300px;
+                height: 300px;
+            }
+            
+            to{
+                transform: rotateZ(360deg);
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+
+
+        @keyframes barAnimation {
+            from{
+                width: 100vw;
+            }
+
+            to{
+                width: 0vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="progressBar"></div>
+    <header>
+
+    </header>
+
+    <main>
+        <div class="slider"></div>
+        <div class="box">
+            <img src="https://images.pexels.com/photos/11294856/pexels-photo-11294856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+
+        </div>
+    </main>
+</body>
+</html>

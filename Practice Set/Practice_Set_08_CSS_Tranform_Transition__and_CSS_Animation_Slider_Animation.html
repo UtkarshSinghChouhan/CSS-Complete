@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 08 CSS Tranform, Transitions and Animations</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        header{
+            background-color: black;
+            height: 58px;
+        }
+
+        main{
+            background-color: rgb(154, 154, 244);
+            height: 100vh;
+        }
+
+        .slider{
+            background-color: beige;
+            height: 378px;
+            display: flex;
+            justify-content: center;
+        }      
+
+        .img1{
+            transform:translateX( -50vw);
+            animation: imageCarousal1 3s ease-in-out  2s infinite normal ;
+        }
+        
+        .img2{
+            transform:translateX( -18vw);
+            animation: imageCarousal2 3s ease-in-out 2s  infinite normal ;
+        }
+        
+        
+        
+        @keyframes imageCarousal1 {
+            from{
+                transform:translateX( -31vw);
+            }
+            
+            to{
+                
+                transform:translateX( 13vw);
+            }
+        }
+        @keyframes imageCarousal2 {
+            from{
+                transform:translateX( 0vw);
+            }
+            
+            to{
+                transform:translateX( 92vw);
+                
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <header>
+
+    </header>
+
+    <main>
+        <div class="slider">
+            <img class="img1" src="https://images.pexels.com/photos/12715975/pexels-photo-12715975.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <img class="img2" src="https://images.pexels.com/photos/12499889/pexels-photo-12499889.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        </div>
+      
+    </main>
+</body>
+</html>
